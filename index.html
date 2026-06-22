@@ -16,16 +16,21 @@
       </div>
 
       <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Profile</a>
-        <a href="#">Winners</a>
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#groups">Groups</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#host">Host Cities</a>
+          <a href="#winner">Winners</a>
+          <a href="#video">Highlights</a>
+          <a href="#map">Map</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </nav>
     </header>
 
     <main>
-      <section class="hero">
+      <section class="hero" id="home">
         <h1>FIFA World Cup 2026</h1>
         <p>Samurai, the time has come to fight!</p>
 
@@ -36,7 +41,7 @@
     </main>
     <video class="hero-video" src="./fifa video.mp4" muted loop></video>
 
-    <section class="groups">
+    <section class="groups" id="groups">
       <h2>FIFA World Cup 2026 Groups</h2>
       <p>Official group stage standings</p>
 
@@ -233,7 +238,7 @@
           </div>
         </div>
       </div>
-      <div class="gallery-section">
+      <div class="gallery-section" id="gallery">
         <h2>FIFA World Cup Gallery</h2>
         <p>Moments that define football history</p>
 
@@ -304,7 +309,7 @@
       </div>
     </section>
 
-    <section class="host-cities">
+    <section class="host-cities" id="host">
       <h2>FIFA World Cup 2026 Host Cities</h2>
       <p>16 cities across North America will host the tournament.</p>
 
@@ -350,5 +355,156 @@
         </div>
       </div>
     </section>
+
+    <section class="winners" id="winner">
+      <h2>FIFA World Cup Champions</h2>
+      <p>History of the FIFA World Cup winners</p>
+
+      <div class="winner-cards">
+        <div class="winner-card">
+          <h3>2022</h3>
+          <span>🇦🇷 Argentina</span>
+        </div>
+
+        <div class="winner-card">
+          <h3>2018</h3>
+          <span>🇫🇷 France</span>
+        </div>
+
+        <div class="winner-card">
+          <h3>2014</h3>
+          <span>🇩🇪 Germany</span>
+        </div>
+
+        <div class="winner-card">
+          <h3>2010</h3>
+          <span>🇪🇸 Spain</span>
+        </div>
+
+        <div class="winner-card">
+          <h3>2006</h3>
+          <span>🇮🇹 Italy</span>
+        </div>
+
+        <div class="winner-card">
+          <h3>2002</h3>
+          <span>🇧🇷 Brazil</span>
+        </div>
+
+        <div class="winner-card">
+          <h3>1998</h3>
+          <span>🇫🇷 France</span>
+        </div>
+
+        <div class="winner-card">
+          <h3>1994</h3>
+          <span>🇧🇷 Brazil</span>
+        </div>
+      </div>
+    </section>
+    <section class="highlights" id="video">
+      <h2>FIFA World Cup Highlights</h2>
+      <p>Relive some unforgettable World Cup moments</p>
+
+      <div class="video-container">
+        <div class="video-card">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/agrGb25mJzs?si=KmozYah4TxClbxxq"
+            title="YouTube video player"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <h3>Argentina vs France Final 2022</h3>
+        </div>
+
+        <div class="video-card">
+          <iframe
+            src="https://www.youtube.com/embed/Rv5jTJh4gNk"
+            title="France vs Croatia Final 2018"
+            allowfullscreen
+          >
+          </iframe>
+          <h3>France vs Croatia Final 2018</h3>
+        </div>
+
+        <div class="video-card">
+          <iframe
+            src="https://www.youtube.com/embed/hyQ6MRs506M"
+            title="Germany vs Argentina Final 2014"
+            allowfullscreen
+          >
+          </iframe>
+          <h3>Germany vs Argentina Final 2014</h3>
+        </div>
+      </div>
+    </section>
+    <section class="world-map" id="map">
+      <h2>FIFA World Cup 2026 Host Nations</h2>
+      <p>United States, Canada, and Mexico will host the tournament.</p>
+
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps?q=North%20America&output=embed"
+          loading="lazy"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <p>Send us your message or feedback about FIFA World Cup 2026</p>
+
+      <form class="contact-form" method="post">
+        <div class="input-group">
+          <input type="text" placeholder="Your Name" required />
+        </div>
+
+        <div class="input-group">
+          <input type="email" placeholder="Your Email" required />
+        </div>
+
+        <div class="input-group">
+          <input type="text" placeholder="Subject" />
+        </div>
+
+        <div class="input-group">
+          <textarea rows="6" placeholder="Your Message" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <h2>FIFA World Cup 2026</h2>
+        <p>United States . Canada . Mexico</p>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#groups">Groups</a>
+          <a href="#host">Host Cities</a>
+          <a href="#winner">Winners</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <p class="copyright">
+          © 2026 FIFA World Cup | Khanal Asmit Project. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
+    <button id="backToTop" title="Go to top">Back To Top</button>
   </body>
 </html>
