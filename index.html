@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- here is the navbar section -->
     <header class="navbar">
       <div class="logo">
         <img
@@ -16,16 +17,13 @@
       </div>
 
       <nav>
-        <nav>
-          <a href="#home">Home</a>
-          <a href="#groups">Groups</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#host">Host Cities</a>
-          <a href="#winner">Winners</a>
-          <a href="#video">Highlights</a>
-          <a href="#map">Map</a>
-          <a href="#contact">Contact</a>
-        </nav>
+        <a href="index.html">Home</a>
+        <a href="group.html">Groups</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="hostCity.html">Host Cities</a>
+        <a href="highlights.html">Highlights</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </header>
 
@@ -39,323 +37,69 @@
         </a>
       </section>
     </main>
-    <video class="hero-video" src="./fifa video.mp4" muted loop></video>
+    <video class="hero-video" src="/videos/fifa video.mp4" muted loop></video>
 
-    <section class="groups" id="groups">
-      <h2>FIFA World Cup 2026 Groups</h2>
-      <p>Official group stage standings</p>
+    <!-- tournament format and overview -->
+    <main class="tournament">
+      <h1 class="tournament-title">Tournament</h1>
 
-      <div class="cards">
-        <div class="card">
-          <h3>Group A</h3>
-          <div class="team">
-            <span>🇲🇽 Mexico</span>
-          </div>
-          <div class="team">
-            <span>🇰🇷 South Korea</span>
-          </div>
-          <div class="team">
-            <span>🇨🇿 Czechia</span>
-          </div>
-          <div class="team">
-            <span>🇿🇦 South Africa</span>
-          </div>
-        </div>
+      <div class="tournament-container">
+        <section class="tournament-card">
+          <h2>Overview</h2>
+          <p>
+            The FIFA World Cup 2026 will be jointly hosted by the United States,
+            Canada, and Mexico. It will be the first World Cup to feature
+            <strong>48 national teams</strong>, making it the biggest tournament
+            in FIFA history.
+          </p>
 
-        <div class="card">
-          <h3>Group B</h3>
-          <div class="team">
-            <span>🇨🇦 Canada</span>
-          </div>
-          <div class="team">
-            <span>🇨🇭 Switzerland</span>
-          </div>
-          <div class="team">
-            <span>🇧🇦 Bosnia</span>
-          </div>
-          <div class="team">
-            <span>🇶🇦 Qatar</span>
-          </div>
-        </div>
+          <div class="overview-info">
+            <div class="info-box">
+              <h3>48</h3>
+              <p>Teams</p>
+            </div>
 
-        <div class="card">
-          <h3>Group C</h3>
-          <div class="team">
-            <span>🏴 Scotland</span>
-          </div>
-          <div class="team">
-            <span>🇧🇷 Brazil</span>
-          </div>
-          <div class="team">
-            <span>🇲🇦 Morocco</span>
-          </div>
-          <div class="team">
-            <span>🇭🇹 Haiti</span>
-          </div>
-        </div>
+            <div class="info-box">
+              <h3>104</h3>
+              <p>Matches</p>
+            </div>
 
-        <div class="card">
-          <h3>Group D</h3>
-          <div class="team">
-            <span>🇺🇸 USA</span>
-          </div>
-          <div class="team">
-            <span>🇦🇺 Australia</span>
-          </div>
-          <div class="team">
-            <span>🇹🇷 Türkiye</span>
-          </div>
-          <div class="team">
-            <span>🇵🇾 Paraguay</span>
-          </div>
-        </div>
+            <div class="info-box">
+              <h3>16</h3>
+              <p>Host Cities</p>
+            </div>
 
-        <div class="card">
-          <h3>Group E</h3>
-          <div class="team">
-            <span>🇩🇪 Germany</span>
+            <div class="info-box">
+              <h3>3</h3>
+              <p>Host Nations</p>
+            </div>
           </div>
-          <div class="team">
-            <span>🇨🇮 Ivory Coast</span>
-          </div>
-          <div class="team">
-            <span>🇪🇨 Ecuador</span>
-          </div>
-          <div class="team">
-            <span>🇨🇼 Curaçao</span>
-          </div>
-        </div>
+        </section>
 
-        <div class="card">
-          <h3>Group F</h3>
-          <div class="team">
-            <span>🇸🇪 Sweden</span>
-          </div>
-          <div class="team">
-            <span>🇯🇵 Japan</span>
-          </div>
-          <div class="team">
-            <span>🇳🇱 Netherlands</span>
-          </div>
-          <div class="team">
-            <span>🇹🇳 Tunisia</span>
-          </div>
-        </div>
+        <section class="tournament-card">
+          <h2>Format</h2>
 
-        <div class="card">
-          <h3>Group G</h3>
-          <div class="team">
-            <span>🇳🇿 New Zealand</span>
-          </div>
-          <div class="team">
-            <span>🇮🇷 Iran</span>
-          </div>
-          <div class="team">
-            <span>🇧🇪 Belgium</span>
-          </div>
-          <div class="team">
-            <span>🇪🇬 Egypt</span>
-          </div>
-        </div>
+          <p>
+            The expanded tournament features 48 teams divided into 12 groups.
+            The top two teams from each group and the eight best third-placed
+            teams advance to the Round of 32 before progressing through the
+            knockout rounds to the Final.
+          </p>
 
-        <div class="card">
-          <h3>Group H</h3>
-          <div class="team">
-            <span>🇺🇾 Uruguay</span>
+          <div class="format-flow">
+            <div>48 Teams</div>
+            <span>↓</span>
+            <div>12 Groups</div>
+            <span>↓</span>
+            <div>Round of 32</div>
+            <span>↓</span>
+            <div>Final</div>
           </div>
-          <div class="team">
-            <span>🇸🇦 Saudi Arabia</span>
-          </div>
-          <div class="team">
-            <span>🇪🇸 Spain</span>
-          </div>
-          <div class="team">
-            <span>🇨🇻 Cape Verde</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Group I</h3>
-          <div class="team">
-            <span>🇳🇴 Norway</span>
-          </div>
-          <div class="team">
-            <span>🇫🇷 France</span>
-          </div>
-          <div class="team">
-            <span>🇸🇳 Senegal</span>
-          </div>
-          <div class="team">
-            <span>🇮🇶 Iraq</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Group J</h3>
-          <div class="team">
-            <span>🇦🇷 Argentina</span>
-          </div>
-          <div class="team">
-            <span>🇦🇹 Austria</span>
-          </div>
-          <div class="team">
-            <span>🇯🇴 Jordan</span>
-          </div>
-          <div class="team">
-            <span>🇩🇿 Algeria</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Group K</h3>
-          <div class="team">
-            <span>🇨🇴 Colombia</span>
-          </div>
-          <div class="team">
-            <span>🇨🇩 DR Congo</span>
-          </div>
-          <div class="team">
-            <span>🇵🇹 Portugal</span>
-          </div>
-          <div class="team">
-            <span>🇺🇿 Uzbekistan</span>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Group L</h3>
-          <div class="team">
-            <span>🇬🇧 England</span>
-          </div>
-          <div class="team">
-            <span>🇬🇭 Ghana</span>
-          </div>
-          <div class="team">
-            <span>🇵🇦 Panama</span>
-          </div>
-          <div class="team">
-            <span>🇭🇷 Croatia</span>
-          </div>
-        </div>
+        </section>
       </div>
-      <div class="gallery-section" id="gallery">
-        <h2>FIFA World Cup Gallery</h2>
-        <p>Moments that define football history</p>
+    </main>
 
-        <div class="gallery">
-          <div class="gallery-item">
-            <img
-              src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a"
-              alt="Football Stadium"
-            />
-            <div class="overlay">World-Class Stadiums</div>
-          </div>
-
-          <div class="gallery-item">
-            <img
-              src="https://plus.unsplash.com/premium_photo-1661868926397-0083f0503c07?w=600&auto=format&fit=crop&q=60"
-              alt="Football Match"
-            />
-            <div class="overlay">The Beautiful Game</div>
-          </div>
-
-          <div class="gallery-item">
-            <img
-              src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600&auto=format&fit=crop&q=60"
-              alt="Football Action"
-            />
-            <div class="overlay">Match Day Action</div>
-          </div>
-
-          <div class="gallery-item">
-            <img
-              src="https://images.unsplash.com/photo-1574629810360-7efbbe195018"
-              alt="Football Crowd"
-            />
-            <div class="overlay">Passionate Fans</div>
-          </div>
-
-          <div class="gallery-item">
-            <img
-              src="https://images.unsplash.com/photo-1486286701208-1d58e9338013"
-              alt="Football Trophy"
-            />
-            <div class="overlay">Dream of Glory</div>
-          </div>
-
-          <div class="gallery-item">
-            <img
-              src="https://images.unsplash.com/photo-1517466787929-bc90951d0974"
-              alt="Football Celebration"
-            />
-            <div class="overlay">Champions Rise</div>
-          </div>
-          <div class="gallery-item">
-            <img
-              src="https://images.unsplash.com/photo-1518604666860-9ed391f76460?w=600&auto=format&fit=crop&q=60"
-              alt="Football Goal Celebration"
-            />
-            <div class="overlay">Goal Celebration</div>
-          </div>
-
-          <div class="gallery-item">
-            <img
-              src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=600&auto=format&fit=crop&q=60"
-              alt="Football Stadium Crowd"
-            />
-            <div class="overlay">The Roar of the Crowd</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="host-cities" id="host">
-      <h2>FIFA World Cup 2026 Host Cities</h2>
-      <p>16 cities across North America will host the tournament.</p>
-
-      <div class="city-cards">
-        <div class="city-card">
-          <h3>🇺🇸 New York / New Jersey</h3>
-          <p>MetLife Stadium</p>
-        </div>
-
-        <div class="city-card">
-          <h3>🇺🇸 Los Angeles</h3>
-          <p>SoFi Stadium</p>
-        </div>
-
-        <div class="city-card">
-          <h3>🇺🇸 Dallas</h3>
-          <p>AT&T Stadium</p>
-        </div>
-
-        <div class="city-card">
-          <h3>🇺🇸 Miami</h3>
-          <p>Hard Rock Stadium</p>
-        </div>
-
-        <div class="city-card">
-          <h3>🇨🇦 Toronto</h3>
-          <p>BMO Field</p>
-        </div>
-
-        <div class="city-card">
-          <h3>🇨🇦 Vancouver</h3>
-          <p>BC Place</p>
-        </div>
-
-        <div class="city-card">
-          <h3>🇲🇽 Mexico City</h3>
-          <p>Estadio Azteca</p>
-        </div>
-
-        <div class="city-card">
-          <h3>🇲🇽 Guadalajara</h3>
-          <p>Estadio Akron</p>
-        </div>
-      </div>
-    </section>
-
+    <!-- //winner -->
     <section class="winners" id="winner">
       <h2>FIFA World Cup Champions</h2>
       <p>History of the FIFA World Cup winners</p>
@@ -363,93 +107,55 @@
       <div class="winner-cards">
         <div class="winner-card">
           <h3>2022</h3>
-          <span>🇦🇷 Argentina</span>
+          <span> Argentina</span>
         </div>
 
         <div class="winner-card">
           <h3>2018</h3>
-          <span>🇫🇷 France</span>
+          <span> France</span>
         </div>
 
         <div class="winner-card">
           <h3>2014</h3>
-          <span>🇩🇪 Germany</span>
+          <span> Germany</span>
         </div>
 
         <div class="winner-card">
           <h3>2010</h3>
-          <span>🇪🇸 Spain</span>
+          <span> Spain</span>
         </div>
 
         <div class="winner-card">
           <h3>2006</h3>
-          <span>🇮🇹 Italy</span>
+          <span> Italy</span>
         </div>
 
         <div class="winner-card">
           <h3>2002</h3>
-          <span>🇧🇷 Brazil</span>
+          <span> Brazil</span>
         </div>
 
         <div class="winner-card">
           <h3>1998</h3>
-          <span>🇫🇷 France</span>
+          <span> France</span>
         </div>
 
         <div class="winner-card">
           <h3>1994</h3>
-          <span>🇧🇷 Brazil</span>
+          <span> Brazil</span>
+        </div>
+        <div class="winner-card">
+          <h3>1990</h3>
+          <span> West Germany</span>
+        </div>
+        <div class="winner-card">
+          <h3>1986</h3>
+          <span> Argentina</span>
         </div>
       </div>
     </section>
-    <section class="highlights" id="video">
-      <h2>FIFA World Cup Highlights</h2>
-      <p>Relive some unforgettable World Cup moments</p>
 
-      <div class="video-container">
-        <div class="video-card">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/agrGb25mJzs?si=KmozYah4TxClbxxq"
-            title="YouTube video player"
-            frameborder="0"
-            allow="
-              accelerometer;
-              autoplay;
-              clipboard-write;
-              encrypted-media;
-              gyroscope;
-              picture-in-picture;
-              web-share;
-            "
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-          <h3>Argentina vs France Final 2022</h3>
-        </div>
-
-        <div class="video-card">
-          <iframe
-            src="https://www.youtube.com/embed/Rv5jTJh4gNk"
-            title="France vs Croatia Final 2018"
-            allowfullscreen
-          >
-          </iframe>
-          <h3>France vs Croatia Final 2018</h3>
-        </div>
-
-        <div class="video-card">
-          <iframe
-            src="https://www.youtube.com/embed/hyQ6MRs506M"
-            title="Germany vs Argentina Final 2014"
-            allowfullscreen
-          >
-          </iframe>
-          <h3>Germany vs Argentina Final 2014</h3>
-        </div>
-      </div>
-    </section>
+    <!-- // map -->
     <section class="world-map" id="map">
       <h2>FIFA World Cup 2026 Host Nations</h2>
       <p>United States, Canada, and Mexico will host the tournament.</p>
@@ -463,48 +169,39 @@
         </iframe>
       </div>
     </section>
-    <section class="contact" id="contact">
-      <h2>Contact Us</h2>
-      <p>Send us your message or feedback about FIFA World Cup 2026</p>
 
-      <form class="contact-form" method="post">
-        <div class="input-group">
-          <input type="text" placeholder="Your Name" required />
-        </div>
-
-        <div class="input-group">
-          <input type="email" placeholder="Your Email" required />
-        </div>
-
-        <div class="input-group">
-          <input type="text" placeholder="Subject" />
-        </div>
-
-        <div class="input-group">
-          <textarea rows="6" placeholder="Your Message" required></textarea>
-        </div>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
+    <!-- footer section  -->
     <footer class="footer">
       <div class="footer-content">
         <h2>FIFA World Cup 2026</h2>
         <p>United States . Canada . Mexico</p>
 
         <div class="footer-links">
-          <a href="#home">Home</a>
-          <a href="#groups">Groups</a>
-          <a href="#host">Host Cities</a>
-          <a href="#winner">Winners</a>
-          <a href="#contact">Contact</a>
+          <a href="index.html">Home</a>
+          <a href="group.html">Groups</a>
+          <a href="hostCity.html">Host Cities</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About Us</a>
         </div>
-
-        <p class="copyright">
-          © 2026 FIFA World Cup | Khanal Asmit Project. All Rights Reserved.
-        </p>
       </div>
+
+      <ul>
+        <h3>Useful Links</h3>
+        <li>
+          <a href="https://www.fifa.com" target="_blank">Official FIFA</a>
+        </li>
+        <li>
+          <a href="https://www.fifa.com/fifaplus/en" target="_blank">FIFA+</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/fifaworldcup/" target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@fifa" target="_blank">YouTube</a>
+        </li>
+      </ul>
     </footer>
-    <button id="backToTop" title="Go to top">Back To Top</button>
   </body>
 </html>

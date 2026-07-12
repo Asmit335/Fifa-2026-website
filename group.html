@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIFA World Cup 2026</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: #111;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 40px;
+      }
+
+      .logo img {
+        height: 80px;
+      }
+
+      nav {
+        display: flex;
+        gap: 25px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #f5deb3;
+        font-size: 1.1rem;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      nav a::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #00e5ff;
+        transition: 0.3s;
+      }
+
+      nav a:hover::after {
+        width: 100%;
+      }
+      .groups {
+        padding: 60px 20px;
+        text-align: center;
+        color: rgb(16, 3, 62);
+      }
+
+      .groups h2 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        animation: fadeDown 1s ease;
+      }
+
+      .groups p {
+        opacity: 0.8;
+        margin-bottom: 40px;
+      }
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px;
+      }
+
+      .card {
+        background-color: #d0e7e6;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 20px;
+        width: 250px;
+        box-shadow: 2px 2px 2px rgb(14, 13, 17);
+        transition: 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 2px 2px 2px rgb(5, 0, 18);
+      }
+
+      .card h3 {
+        margin-bottom: 15px;
+        color: #00e5ff;
+      }
+
+      .team {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .team span {
+        font-weight: bold;
+      }
+
+      .team p {
+        margin: 0;
+      }
+
+      .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #d0e7e6;
+        padding: 50px 20px 25px;
+        text-align: center;
+        border-top: 3px solid #00e5ff;
+      }
+
+      .footer-content h2 {
+        color: #0f172a;
+        margin-bottom: 10px;
+        font-size: 2rem;
+      }
+
+      .footer-content p {
+        color: #cbd5e1;
+        margin-bottom: 15px;
+      }
+
+      .footer-links {
+        margin: 25px 0;
+      }
+
+      .footer-links a {
+        color: #000;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .footer-links a:hover {
+        color: #00e5ff;
+      }
+
+      .footer ul a {
+        text-decoration: none;
+      }
+      .footer ul {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar section -->
+    <header class="navbar">
+      <div class="logo">
+        <img
+          src="https://digitalhub.fifa.com/transform/157d23bf-7e13-4d7b-949e-5d27d340987e/WC26_Logo?&io=transform:fill&quality=75"
+          alt="FIFA World Cup 2026 Logo"
+        />
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="group.html">Groups</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="hostCity.html">Host Cities</a>
+        <a href="highlights.html">Highlights</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <!-- //group -->
+    <section class="groups" id="groups">
+      <h2>FIFA World Cup 2026 Groups</h2>
+      <p>Official group stage standings</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Group A</h3>
+          <div class="team">
+            <span> Mexico</span>
+          </div>
+          <div class="team">
+            <span> South Korea</span>
+          </div>
+          <div class="team">
+            <span> Czechia</span>
+          </div>
+          <div class="team">
+            <span> South Africa</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Group B</h3>
+          <div class="team">
+            <span> Canada</span>
+          </div>
+          <div class="team">
+            <span> Switzerland</span>
+          </div>
+          <div class="team">
+            <span> Bosnia</span>
+          </div>
+          <div class="team">
+            <span> Qatar</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Group C</h3>
+          <div class="team">
+            <span>Scotland</span>
+          </div>
+          <div class="team">
+            <span> Brazil</span>
+          </div>
+          <div class="team">
+            <span> Morocco</span>
+          </div>
+          <div class="team">
+            <span> Haiti</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Group D</h3>
+          <div class="team">
+            <span> USA</span>
+          </div>
+          <div class="team">
+            <span> Australia</span>
+          </div>
+          <div class="team">
+            <span> Türkiye</span>
+          </div>
+          <div class="team">
+            <span> Paraguay</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Group E</h3>
+          <div class="team">
+            <span> Germany</span>
+          </div>
+          <div class="team">
+            <span> Ivory Coast</span>
+          </div>
+          <div class="team">
+            <span> Ecuador</span>
+          </div>
+          <div class="team">
+            <span> Curaçao</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Group F</h3>
+          <div class="team">
+            <span> Sweden</span>
+          </div>
+          <div class="team">
+            <span> Japan</span>
+          </div>
+          <div class="team">
+            <span> Netherlands</span>
+          </div>
+          <div class="team">
+            <span> Tunisia</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Group G</h3>
+          <div class="team">
+            <span> New Zealand</span>
+          </div>
+          <div class="team">
+            <span> Iran</span>
+          </div>
+          <div class="team">
+            <span> Belgium</span>
+          </div>
+          <div class="team">
+            <span> Egypt</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Group H</h3>
+          <div class="team">
+            <span> Uruguay</span>
+          </div>
+          <div class="team">
+            <span> Saudi Arabia</span>
+          </div>
+          <div class="team">
+            <span> Spain</span>
+          </div>
+          <div class="team">
+            <span> Cape Verde</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Group I</h3>
+          <div class="team">
+            <span> Norway</span>
+          </div>
+          <div class="team">
+            <span> France</span>
+          </div>
+          <div class="team">
+            <span> Senegal</span>
+          </div>
+          <div class="team">
+            <span> Iraq</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Group J</h3>
+          <div class="team">
+            <span> Argentina</span>
+          </div>
+          <div class="team">
+            <span> Austria</span>
+          </div>
+          <div class="team">
+            <span> Jordan</span>
+          </div>
+          <div class="team">
+            <span> Algeria</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Group K</h3>
+          <div class="team">
+            <span> Colombia</span>
+          </div>
+          <div class="team">
+            <span> DR Congo</span>
+          </div>
+          <div class="team">
+            <span> Portugal</span>
+          </div>
+          <div class="team">
+            <span> Uzbekistan</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Group L</h3>
+          <div class="team">
+            <span> England</span>
+          </div>
+          <div class="team">
+            <span> Ghana</span>
+          </div>
+          <div class="team">
+            <span> Panama</span>
+          </div>
+          <div class="team">
+            <span> Croatia</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer section  -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h2>FIFA World Cup 2026</h2>
+        <p>United States . Canada . Mexico</p>
+
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="group.html">Groups</a>
+          <a href="hostCity.html">Host Cities</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About Us</a>
+        </div>
+      </div>
+      <ul>
+        <h3>Useful Links</h3>
+        <li>
+          <a href="https://www.fifa.com" target="_blank">Official FIFA</a>
+        </li>
+        <li>
+          <a href="https://www.fifa.com/fifaplus/en" target="_blank">FIFA+</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/fifaworldcup/" target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@fifa" target="_blank">YouTube</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

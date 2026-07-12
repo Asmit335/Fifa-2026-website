@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIFA World Cup 2026</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: #111;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 40px;
+      }
+
+      .logo img {
+        height: 80px;
+      }
+
+      nav {
+        display: flex;
+        gap: 25px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #f5deb3;
+        font-size: 1.1rem;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      nav a::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #00e5ff;
+        transition: 0.3s;
+      }
+
+      nav a:hover::after {
+        width: 100%;
+      }
+      .gallery-section h2 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        color: #00e5ff;
+      }
+
+      .gallery-section p {
+        color: #cbd5e1;
+        margin-bottom: 40px;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 20px;
+        max-width: 1400px;
+        margin: auto;
+      }
+
+      .gallery-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 15px;
+        cursor: pointer;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+
+      .gallery-item:hover img {
+        transform: scale(1.12);
+      }
+      .gallery-section {
+        padding: 80px 20px;
+        background-color: #d0e7e6;
+        color: white;
+        text-align: center;
+      }
+
+      .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #d0e7e6;
+        padding: 50px 20px 25px;
+        text-align: center;
+        border-top: 3px solid #00e5ff;
+      }
+
+      .footer-content h2 {
+        color: #0f172a;
+        margin-bottom: 10px;
+        font-size: 2rem;
+      }
+
+      .footer-content p {
+        color: #cbd5e1;
+        margin-bottom: 15px;
+      }
+
+      .footer-links {
+        margin: 25px 0;
+      }
+
+      .footer-links a {
+        color: #000;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .footer-links a:hover {
+        color: #00e5ff;
+      }
+      .footer ul a {
+        text-decoration: none;
+      }
+      .footer ul {
+        list-style: none;
+      }
+      .anthem {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar section -->
+    <header class="navbar">
+      <div class="logo">
+        <img
+          src="https://digitalhub.fifa.com/transform/157d23bf-7e13-4d7b-949e-5d27d340987e/WC26_Logo?&io=transform:fill&quality=75"
+          alt="FIFA World Cup 2026 Logo"
+        />
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="group.html">Groups</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="hostCity.html">Host Cities</a>
+        <a href="highlights.html">Highlights</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <div class="gallery-section" id="gallery">
+      <h2>FIFA World Cup Gallery</h2>
+      <p>Moments that define football history</p>
+
+      <div class="gallery">
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1517927033932-b3d18e61fb3a"
+            alt="Football Stadium"
+          />
+          <div class="overlay">World-Class Stadiums</div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://plus.unsplash.com/premium_photo-1661868926397-0083f0503c07?w=600&auto=format&fit=crop&q=60"
+            alt="Football Match"
+          />
+          <div class="overlay">The Beautiful Game</div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1522778119026-d647f0596c20?w=600&auto=format&fit=crop&q=60"
+            alt="Football Action"
+          />
+          <div class="overlay">Match Day Action</div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1574629810360-7efbbe195018"
+            alt="Football Crowd"
+          />
+          <div class="overlay">Passionate Fans</div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1486286701208-1d58e9338013"
+            alt="Football Trophy"
+          />
+          <div class="overlay">Dream of Glory</div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1517466787929-bc90951d0974"
+            alt="Football Celebration"
+          />
+          <div class="overlay">Champions Rise</div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1518604666860-9ed391f76460?w=600&auto=format&fit=crop&q=60"
+            alt="Football Goal Celebration"
+          />
+          <div class="overlay">Goal Celebration</div>
+        </div>
+
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=600&auto=format&fit=crop&q=60"
+            alt="Football Stadium Crowd"
+          />
+          <div class="overlay">The Roar of the Crowd</div>
+        </div>
+      </div>
+    </div>
+    <!-- audio of the fifa 2026 Official theme -->
+    <section class="anthem">
+      <h2>Official FIFA Anthem</h2>
+      <audio controls>
+        <source src="audio/fifa 2026 song.weba" type="audio/mpeg" />
+        Your browser does not support audio.
+      </audio>
+    </section>
+    <!-- footer section  -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h2>FIFA World Cup 2026</h2>
+        <p>United States . Canada . Mexico</p>
+
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="group.html">Groups</a>
+          <a href="hostCity.html">Host Cities</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About Us</a>
+        </div>
+      </div>
+      <ul>
+        <h3>Useful Links</h3>
+        <li>
+          <a href="https://www.fifa.com" target="_blank">Official FIFA</a>
+        </li>
+        <li>
+          <a href="https://www.fifa.com/fifaplus/en" target="_blank">FIFA+</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/fifaworldcup/" target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@fifa" target="_blank">YouTube</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

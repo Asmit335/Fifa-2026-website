@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fifa World Cup</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+      .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: #111;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 40px;
+      }
+
+      .logo img {
+        height: 80px;
+      }
+
+      nav {
+        display: flex;
+        gap: 25px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #f5deb3;
+        font-size: 1.1rem;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      nav a::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #00e5ff;
+        transition: 0.3s;
+      }
+
+      nav a:hover::after {
+        width: 100%;
+      }
+
+      .about {
+        padding: 70px 10%;
+        background: #f8fafc;
+      }
+
+      .about-section,
+      .mission-section {
+        margin-bottom: 60px;
+      }
+
+      .about h1,
+      .about h2 {
+        text-align: center;
+        color: #0f172a;
+        margin-bottom: 20px;
+      }
+
+      .about p {
+        color: #444;
+        line-height: 1.8;
+        text-align: justify;
+      }
+
+      .team-section {
+        text-align: center;
+      }
+
+      .team-container {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
+
+      .team-card {
+        width: 320px;
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        transition: 0.3s;
+      }
+
+      .team-card:hover {
+        transform: translateY(-8px);
+      }
+
+      .team-card img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+        border: 4px solid #00c896;
+      }
+
+      .team-card h3 {
+        color: #00c896;
+        margin-bottom: 10px;
+      }
+
+      .team-card p {
+        text-align: center;
+      }
+      .footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: #d0e7e6;
+        padding: 50px 20px 25px;
+        text-align: center;
+        border-top: 3px solid #00e5ff;
+      }
+
+      .footer-content h2 {
+        color: #0f172a;
+        margin-bottom: 10px;
+        font-size: 2rem;
+      }
+
+      .footer-content p {
+        color: #cbd5e1;
+        margin-bottom: 15px;
+      }
+
+      .footer-links {
+        margin: 25px 0;
+      }
+
+      .footer-links a {
+        color: #000;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .footer-links a:hover {
+        color: #00e5ff;
+      }
+
+      .footer ul a {
+        text-decoration: none;
+      }
+      .footer ul {
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- here is the navbar section -->
+    <header class="navbar">
+      <div class="logo">
+        <img
+          src="https://digitalhub.fifa.com/transform/157d23bf-7e13-4d7b-949e-5d27d340987e/WC26_Logo?&io=transform:fill&quality=75"
+          alt="FIFA World Cup 2026 Logo"
+        />
+      </div>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="group.html">Groups</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="hostCity.html">Host Cities</a>
+        <a href="highlights.html">Highlights</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="about">
+      <!-- here is the about project -->
+      <section class="about-section">
+        <h1>About FIFA World Cup 2026</h1>
+
+        <p>
+          The FIFA World Cup 2026 is the biggest tournament in football history,
+          bringing together 48 national teams from around the world. Hosted
+          jointly by the United States, Canada, and Mexico, the tournament
+          celebrates the passion, diversity, and unity that football inspires
+          across every continent.
+        </p>
+
+        <p>
+          It provides information about the FIFA World Cup 2026, including the
+          tournament overview, participating groups, host cities, memorable
+          champions, match highlights, and an image gallery. The project
+          demonstrates responsive layouts, modern web design, and semantic HTML
+          without using JavaScript.
+        </p>
+      </section>
+
+      <!-- Mission -->
+      <section class="mission-section">
+        <h2>Our Mission</h2>
+
+        <p>
+          Our goal is to design a clean, responsive, and user-friendly website
+          that presents FIFA World Cup 2026 information in an attractive and
+          organized way. This project also reflects our learning and practical
+          skills in HTML and CSS while following modern web design principles.
+        </p>
+      </section>
+
+      <!-- Team -->
+      <section class="team-section">
+        <h2>Meet Our Team</h2>
+
+        <div class="team-container">
+          <div class="team-card">
+            <img
+              src="https://avatars.githubusercontent.com/u/84969950?v=4"
+              alt="Khanal Asmit"
+            />
+            <h3>Khanal Asmit</h3>
+            <p>Frontend Developer</p>
+            <p>
+              Designed the website layout, created responsive pages, and
+              developed the user interface using HTML and CSS.
+            </p>
+          </div>
+
+          <div class="team-card">
+            <img src="images/bishal bamrel.jpeg" alt="Bamrel Bishal" />
+            <h3>Bamrel Bishal</h3>
+            <p>Content & Design Support</p>
+            <p>Assisted with content organization and project development.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section  -->
+    <footer class="footer">
+      <div class="footer-content">
+        <h2>FIFA World Cup 2026</h2>
+        <p>United States . Canada . Mexico</p>
+
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="group.html">Groups</a>
+          <a href="hostCity.html">Host Cities</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About Us</a>
+        </div>
+      </div>
+      <ul>
+        <h3>Useful Links</h3>
+        <li>
+          <a href="https://www.fifa.com" target="_blank">Official FIFA</a>
+        </li>
+        <li>
+          <a href="https://www.fifa.com/fifaplus/en" target="_blank">FIFA+</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/fifaworldcup/" target="_blank"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a href="https://www.youtube.com/@fifa" target="_blank">YouTube</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
