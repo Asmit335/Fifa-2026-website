@@ -319,12 +319,11 @@ nav a:hover::after {
   background-color: #d0e7e6;
   padding: 50px 20px 25px;
   text-align: center;
-  border-top: 3px solid #00e5ff;
+  border-top: 2px solid #010d0f;
 }
 
 .footer-content h2 {
   color: #0f172a;
-  margin-bottom: 10px;
   font-size: 2rem;
 }
 
