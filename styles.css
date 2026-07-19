@@ -143,7 +143,7 @@ nav a:hover::after {
 
 .tournament-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: 48% 48%;
   gap: 35px;
 }
 
@@ -173,7 +173,7 @@ nav a:hover::after {
 
 .overview-info {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 48% 48%;
   gap: 20px;
 }
 
@@ -252,7 +252,7 @@ nav a:hover::after {
 
 .winner-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: 23% 23% 23% 23%;
   gap: 25px;
   max-width: 1200px;
   margin: auto;
@@ -353,4 +353,153 @@ nav a:hover::after {
 }
 .footer ul {
   list-style: none;
+}
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .tournament-container {
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+  }
+
+  .winner-cards {
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+  }
+
+  .overview-info {
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+  }
+
+  .map-container iframe {
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px;
+  }
+
+  .logo img {
+    height: 60px;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .hero {
+    height: auto;
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    padding: 12px 22px;
+  }
+
+  .hero-video {
+    height: 300px;
+  }
+
+  .tournament {
+    padding: 50px 5%;
+  }
+
+  .tournament-title,
+  .winners h2,
+  .world-map h2 {
+    font-size: 2rem;
+  }
+
+  .tournament-container,
+  .winner-cards,
+  .overview-info {
+    grid-template-columns: 100%;
+  }
+
+  .tournament-card {
+    padding: 25px;
+  }
+
+  .format-flow div {
+    width: 100%;
+  }
+
+  .map-container iframe {
+    height: 350px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .tournament-title,
+  .winners h2,
+  .world-map h2 {
+    font-size: 1.7rem;
+  }
+
+  .tournament-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .winner-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .footer-links a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .map-container iframe {
+    height: 250px;
+  }
 }

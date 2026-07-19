@@ -155,6 +155,144 @@
       .footer ul {
         list-style: none;
       }
+      /* Responsive Design */
+
+      /* Tablets */
+      @media (max-width: 992px) {
+        .navbar {
+          flex-direction: column;
+          padding: 15px 20px;
+        }
+
+        .logo img {
+          height: 65px;
+          margin-bottom: 15px;
+        }
+
+        nav {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 15px;
+        }
+
+        nav a {
+          font-size: 1rem;
+        }
+
+        .contact {
+          padding: 50px 15px;
+        }
+
+        .contact h2 {
+          font-size: 2.2rem;
+        }
+
+        .contact-form {
+          width: 90%;
+        }
+
+        .footer {
+          flex-direction: column;
+          gap: 30px;
+        }
+      }
+
+      /* Mobile Devices */
+      @media (max-width: 600px) {
+        .navbar {
+          position: relative;
+          padding: 10px 15px;
+        }
+
+        .logo img {
+          height: 55px;
+        }
+
+        nav {
+          flex-direction: column;
+          align-items: center;
+          gap: 12px;
+        }
+
+        nav a {
+          font-size: 0.95rem;
+        }
+
+        .contact {
+          padding: 35px 10px;
+        }
+
+        .contact h2 {
+          font-size: 1.8rem;
+        }
+
+        .contact p {
+          font-size: 0.9rem;
+          margin-bottom: 25px;
+        }
+
+        .contact-form {
+          width: 95%;
+          padding: 15px;
+        }
+
+        .input-group input,
+        .input-group textarea {
+          font-size: 0.95rem;
+          padding: 12px;
+        }
+
+        .contact-form .submit {
+          width: 100%;
+          padding: 12px;
+          font-size: 1rem;
+        }
+
+        .footer {
+          padding: 30px 15px;
+        }
+
+        .footer-content h2 {
+          font-size: 1.5rem;
+        }
+
+        .footer-content p {
+          font-size: 0.9rem;
+        }
+
+        .footer-links {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .footer-links a {
+          margin: 0;
+        }
+      }
+
+      /* Small Mobile Devices */
+      @media (max-width: 400px) {
+        .logo img {
+          height: 45px;
+        }
+
+        nav a {
+          font-size: 0.85rem;
+        }
+
+        .contact h2 {
+          font-size: 1.5rem;
+        }
+
+        .contact-form {
+          width: 100%;
+        }
+
+        .footer-content h2 {
+          font-size: 1.3rem;
+        }
+      }
     </style>
   </head>
   <body>

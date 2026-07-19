@@ -144,6 +144,156 @@
         margin-top: 10px;
         justify-content: center;
       }
+      /* Responsive Design */
+
+      /* Tablets */
+      @media (max-width: 992px) {
+        .navbar {
+          flex-direction: column;
+          padding: 15px 20px;
+        }
+
+        .logo img {
+          height: 65px;
+          margin-bottom: 15px;
+        }
+
+        nav {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 15px;
+        }
+
+        nav a {
+          font-size: 1rem;
+        }
+
+        .gallery-section {
+          padding: 50px 15px;
+        }
+
+        .gallery-section h2 {
+          font-size: 2.3rem;
+        }
+
+        .gallery {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 15px;
+        }
+
+        .gallery-item img {
+          height: 220px;
+        }
+
+        .footer {
+          flex-direction: column;
+          gap: 30px;
+        }
+      }
+
+      /* Mobile Devices */
+      @media (max-width: 600px) {
+        .navbar {
+          position: relative;
+          padding: 10px 15px;
+        }
+
+        .logo img {
+          height: 55px;
+        }
+
+        nav {
+          flex-direction: column;
+          align-items: center;
+          gap: 12px;
+        }
+
+        nav a {
+          font-size: 0.95rem;
+        }
+
+        .gallery-section {
+          padding: 35px 10px;
+        }
+
+        .gallery-section h2 {
+          font-size: 1.8rem;
+        }
+
+        .gallery-section p {
+          font-size: 0.9rem;
+          margin-bottom: 25px;
+        }
+
+        .gallery {
+          grid-template-columns: 1fr;
+          gap: 15px;
+        }
+
+        .gallery-item img {
+          height: 230px;
+        }
+
+        .anthem {
+          flex-direction: column;
+          align-items: center;
+          padding: 20px;
+          text-align: center;
+        }
+
+        .anthem h2 {
+          font-size: 1.4rem;
+        }
+
+        audio {
+          width: 100%;
+        }
+
+        .footer {
+          padding: 30px 15px;
+        }
+
+        .footer-content h2 {
+          font-size: 1.5rem;
+        }
+
+        .footer-content p {
+          font-size: 0.9rem;
+        }
+
+        .footer-links {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .footer-links a {
+          margin: 0;
+        }
+      }
+
+      /* Small Mobile Devices */
+      @media (max-width: 400px) {
+        .logo img {
+          height: 45px;
+        }
+
+        nav a {
+          font-size: 0.85rem;
+        }
+
+        .gallery-section h2 {
+          font-size: 1.5rem;
+        }
+
+        .gallery-item img {
+          height: 200px;
+        }
+
+        .footer-content h2 {
+          font-size: 1.3rem;
+        }
+      }
     </style>
   </head>
   <body>

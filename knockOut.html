@@ -126,6 +126,140 @@
       .footer ul {
         list-style: none;
       }
+      /* Responsive Design */
+
+      /* Tablets */
+      @media (max-width: 992px) {
+        .navbar {
+          flex-direction: column;
+          padding: 15px 20px;
+        }
+
+        .logo img {
+          height: 65px;
+          margin-bottom: 15px;
+        }
+
+        nav {
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 15px;
+        }
+
+        nav a {
+          font-size: 1rem;
+        }
+
+        .headingtable {
+          font-size: 2rem;
+          margin: 25px;
+        }
+
+        .knockout-table {
+          min-width: 1000px;
+        }
+
+        body {
+          overflow-x: auto;
+        }
+
+        .footer {
+          flex-direction: column;
+          gap: 30px;
+        }
+      }
+
+      /* Mobile Devices */
+      @media (max-width: 600px) {
+        .navbar {
+          position: relative;
+          padding: 10px 15px;
+        }
+
+        .logo img {
+          height: 55px;
+        }
+
+        nav {
+          flex-direction: column;
+          align-items: center;
+          gap: 12px;
+        }
+
+        nav a {
+          font-size: 0.95rem;
+        }
+
+        .headingtable {
+          font-size: 1.5rem;
+          margin: 20px 10px;
+        }
+
+        /* Horizontal scrolling for knockout table */
+        .knockout-table {
+          min-width: 900px;
+          font-size: 0.85rem;
+        }
+
+        .knockout-table th {
+          padding: 10px;
+        }
+
+        .knockout-table td {
+          padding: 8px;
+          line-height: 1.5;
+        }
+
+        .knockout-table img {
+          width: 22px;
+          margin-right: 5px;
+        }
+
+        .footer {
+          padding: 30px 15px;
+        }
+
+        .footer-content h2 {
+          font-size: 1.5rem;
+        }
+
+        .footer-content p {
+          font-size: 0.9rem;
+        }
+
+        .footer-links {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+        }
+
+        .footer-links a {
+          margin: 0;
+        }
+      }
+
+      /* Small Mobile Devices */
+      @media (max-width: 400px) {
+        .logo img {
+          height: 45px;
+        }
+
+        nav a {
+          font-size: 0.85rem;
+        }
+
+        .headingtable {
+          font-size: 1.3rem;
+        }
+
+        .knockout-table {
+          min-width: 800px;
+        }
+
+        .footer-content h2 {
+          font-size: 1.3rem;
+        }
+      }
     </style>
   </head>
   <body>
